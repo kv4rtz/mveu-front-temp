@@ -19,6 +19,9 @@ $grey: #696969;
 
   &Full {
     display: flex;
+    @media screen and (max-width: 950px) {
+      flex-direction: column;
+    }
     &:hover {
       background-color: #fff;
       border: 1px solid #dedede;
@@ -36,12 +39,15 @@ $grey: #696969;
     max-width: 450px;
     min-height: 300px;
     height: 100%;
+    @media screen and (max-width: 950px) {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }
 
 .wrapper {
   padding: 10px 20px 20px;
-  
 }
 
 .content {
@@ -55,6 +61,9 @@ $grey: #696969;
 
 .indention {
   padding-left: 40px;
+  @media screen and (max-width: 950px) {
+    padding-left: 0;
+  }
 }
 
 .title {

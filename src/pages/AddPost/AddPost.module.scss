@@ -2,6 +2,9 @@
   input {
     font-size: 42px;
     font-weight: 900;
+    @media screen and (max-width: 470px) {
+      font-size: 24px;
+    }
   }
 
   div {
@@ -12,7 +15,7 @@
   }
 }
 
-.imageContainer{
+.imageContainer {
   display: flex;
   margin: 10px 0;
   // justify-content: center;
@@ -21,10 +24,9 @@
 .image {
   height: 500px;
   width: 300px;
-  
 }
 
-.divimage{
+.divimage {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
