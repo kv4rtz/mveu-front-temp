@@ -18,9 +18,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../../../public/logo192.png);
+  @media screen and (max-width: 650px) {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+  }
   & + div {
     @media screen and (max-width: 650px) {
-      display: none;
+      width: 100px;
+      line-height: 100%;
+      font-size: 12px;
     }
   }
 }
@@ -28,13 +35,14 @@
   // background-color: rgb(255, 255, 255);
   align-items: center;
   display: flex;
+  // flex-wrap: wrap;
   color: #000000;
   font-weight: 700;
   line-height: 35px;
   text-transform: uppercase;
   letter-spacing: 0.15px;
   border-radius: 5px;
-  padding: 0 10px;
+  // padding: 0 10px;
   text-decoration: none;
 
   &:hover {
@@ -43,11 +51,17 @@
 }
 
 .buttons {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  @media screen and (max-width: 650px) {
+    gap: 3px;
+  }
   button {
-    margin-left: 10px;
     @media screen and (max-width: 650px) {
-      width: 100%;
+      font-size: 12px;
     }
+    height: 100%;
   }
 
   .loginBtn {
@@ -72,9 +86,9 @@
   .createBtn {
     border-color: #312285;
     border: 1px solid #312285;
-    @media screen and (max-width: 650px) {
-      width: 100%;
-    }
+    // @media screen and (max-width: 650px) {
+    //   width: 100%;
+    // }
   }
 
   a {
