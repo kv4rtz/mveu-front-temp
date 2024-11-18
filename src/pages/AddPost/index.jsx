@@ -57,6 +57,10 @@ export const AddPost = () => {
         text,
       };
 
+      if (!fields.text) {
+        fields.text = title
+      }
+
       const { data } = isEditing
         ? await axios.patch(`/posts/${id}`, fields)
         : await axios.post(`/posts`, fields);

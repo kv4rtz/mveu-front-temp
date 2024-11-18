@@ -24,7 +24,7 @@ export const Home = () => {
 
   return (
     <>
-      <Tabs
+      {/* <Tabs
         TabIndicatorProps={{ style: { backgroundColor: "#312285" } }}
         style={{ marginBottom: 15 }}
         value={0}
@@ -32,10 +32,12 @@ export const Home = () => {
       >
         <Tab label="Проекты" />
         <Tab label="Видео" />
-      </Tabs>
-      <Grid xs={4} item>
+      </Tabs> */}
+      {/* <Grid xs={4} item>
         <TagsBlock items={tags.items} isLoading={isTagsLoading} />
-      </Grid>
+      </Grid> */}
+
+      <h1>Работы</h1>
 
       <Grid container>
         {/* <Grid xs={3} item> */}

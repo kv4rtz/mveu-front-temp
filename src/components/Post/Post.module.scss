@@ -19,6 +19,8 @@ $grey: #696969;
 
   &Full {
     display: flex;
+    align-items: center;
+    padding: 10px;
     @media screen and (max-width: 950px) {
       flex-direction: column;
     }
@@ -60,7 +62,7 @@ $grey: #696969;
 }
 
 .indention {
-  padding-left: 40px;
+  // padding-left: 40px;
   @media screen and (max-width: 950px) {
     padding-left: 0;
   }
